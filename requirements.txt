@@ -1,5 +1,9 @@
 # main dependencies
 langchain
+langchain-openai
+
+# extra dependencies
+python-dotenv
 
 # test dependencies
 pytest
