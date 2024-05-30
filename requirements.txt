@@ -7,3 +7,6 @@ python-dotenv
 
 # test dependencies
 pytest
+
+# format dependencies
+black

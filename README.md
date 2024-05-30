@@ -1,5 +1,12 @@
 # langchain-examples
-Examples of langchain concepts
+Examples of langchain concepts.
+
+This is basically a code-along with the tutorials suggested at (https://python.langchain.com/v0.2/docs/introduction/)
+
+The tutorials we will cover are the following:
+- https://python.langchain.com/v0.2/docs/tutorials/llm_chain/
+- https://python.langchain.com/v0.2/docs/tutorials/chatbot/
+- https://python.langchain.com/v0.2/docs/tutorials/agents/
 
 ## Table of Contents
 - [Setup](#setup)
@@ -32,6 +39,25 @@ When you're done working, you can deactivate the virtual environment:
 deactivate
 ```
 
+### langsmith
+
+langchain has a service called `langshith` that you can use to trace the flow of the examples.
+To use it you must sign up at [langsmith](https://smith.langchain.com/) and generate a key.
+You can run the examples without langsmith if you like. just dont set a key in the `.env` and set `LANGCHAIN_TRACING_V2=false`
+
+### environment variables
+
+One small change is made if you compare to the tutorials.
+We use a `.env` file instead of the `getpass` method used in the tutorials.
+
+**Important** You need to set your own keys in the `.env` file to make the examples work.
+
+```
+OPENAI_API_KEY=sk-proj-your-own-key
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_API_KEY=lsv2_pt_your-own-key
+```
+
 ## Structure
 
 Here's a brief overview of the project's structure:
@@ -47,21 +73,24 @@ Here's a brief overview of the project's structure:
 This project contains several example files that you can run to see the concepts in action. Here's how you can run an example:
 
 ```bash
-python example.py
+python src/example.py
 ```
 
 Replace example.py with the name of the example file you want to run.
 
+Each tutorial have several files representing different part of the progression of the code.
+
 Here's a brief description of what each example does:
 
-* example1.py: (Description of what example1.py does)
-* example2.py: (Description of what example2.py does)
-* example3.py: (Description of what example3.py does)
+1. The tutorial https://python.langchain.com/v0.2/docs/tutorials/llm_chain/ is implemented in the following files:
+  * `src/llm_chain_1.py` (model, messages, invoke)
+  * `src/llm_chain_2.py` (parser)
+  * `src/llm_chain_3.py` (chain)
+  * `src/llm_chain_4.py` (prompt template)
 
 Please replace the placeholders with the actual names of your example files and descriptions of what they do.
 
 Remember to activate the virtual environment before running the examples, as described in the Setup section.
-
 
 ## Contributing
 
