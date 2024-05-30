@@ -88,8 +88,6 @@ Here's a brief description of what each example does:
   * `src/llm_chain_3.py` (chain)
   * `src/llm_chain_4.py` (prompt template)
 
-Please replace the placeholders with the actual names of your example files and descriptions of what they do.
-
 Remember to activate the virtual environment before running the examples, as described in the Setup section.
 
 ## Contributing
