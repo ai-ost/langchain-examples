@@ -1,0 +1,5 @@
+# main dependencies
+langchain
+
+# test dependencies
+pytest
