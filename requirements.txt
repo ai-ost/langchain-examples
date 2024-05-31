@@ -1,6 +1,7 @@
 # main dependencies
 langchain
 langchain-openai
+langchain_community
 
 # extra dependencies
 python-dotenv

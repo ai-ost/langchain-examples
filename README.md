@@ -1,7 +1,7 @@
 # langchain-examples
 Examples of langchain concepts.
 
-This is basically a code-along with the tutorials suggested at (https://python.langchain.com/v0.2/docs/introduction/)
+This is basically a code-along with the tutorials suggested at https://python.langchain.com/v0.2/docs/introduction/
 
 The tutorials we will cover are the following:
 - https://python.langchain.com/v0.2/docs/tutorials/llm_chain/
@@ -87,6 +87,18 @@ Here's a brief description of what each example does:
   * `src/llm_chain_2.py` (parser)
   * `src/llm_chain_3.py` (chain)
   * `src/llm_chain_4.py` (prompt template)
+
+2. The tutorial https://python.langchain.com/v0.2/docs/tutorials/chatbot/ is implemented in the follogin files:
+  * `src/chatbot_1.py` (message)
+  * `src/chatbot_2.py` (multiple messages)
+  * `src/chatbot_3.py` (message history, session)
+  * `src/chatbot_4.py` (placeholder)
+  * `src/chatbot_5.py` (message history, session, placeholder)
+  * `src/chatbot_6.py` (message history, session, placeholders)
+  * `src/chatbot_7.py` (message limit)
+  * `src/chatbot_8.py` (message history, message limit)
+  * `src/chatbot_9.py` (streaming)
+
 
 Remember to activate the virtual environment before running the examples, as described in the Setup section.
 
