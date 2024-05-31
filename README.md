@@ -86,7 +86,7 @@ python src/example.py
 
 Replace `example.py` with the name of the example file you want to run.
 
-see (EXAMPLES.md) for more information about the examples.
+see [EXAMPLES.md](EXAMPLES.md) for more information about the examples.
 
 Remember to activate the virtual environment before running the examples, as described in the Setup section.
 
