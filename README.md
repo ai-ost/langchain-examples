@@ -6,6 +6,7 @@ This is basically a code-along with the tutorials suggested at https://python.la
 The tutorials we will cover are the following:
 - https://python.langchain.com/v0.2/docs/tutorials/llm_chain/
 - https://python.langchain.com/v0.2/docs/tutorials/chatbot/
+- https://python.langchain.com/v0.2/docs/tutorials/retrievers/
 - https://python.langchain.com/v0.2/docs/tutorials/agents/
 
 ## Table of Contents
@@ -58,6 +59,13 @@ LANGCHAIN_TRACING_V2=true
 LANGCHAIN_API_KEY=lsv2_pt_your-own-key
 ```
 
+#### Old MacOS
+
+When using chroma the following environment variable had to be set.
+```
+$> export HNSWLIB_NO_NATIVE=1  
+```
+
 ## Structure
 
 Here's a brief overview of the project's structure:
@@ -76,39 +84,9 @@ This project contains several example files that you can run to see the concepts
 python src/example.py
 ```
 
-Replace example.py with the name of the example file you want to run.
+Replace `example.py` with the name of the example file you want to run.
 
-Each tutorial have several files representing different part of the progression of the code.
-
-Here's a brief description of what each example does:
-
-1. The tutorial https://python.langchain.com/v0.2/docs/tutorials/llm_chain/ is implemented in the following files:
-  * `src/llm_chain_1.py` (model, messages, invoke)
-  * `src/llm_chain_2.py` (parser)
-  * `src/llm_chain_3.py` (chain)
-  * `src/llm_chain_4.py` (prompt template)
-
-2. The tutorial https://python.langchain.com/v0.2/docs/tutorials/chatbot/ is implemented in the following files:
-  * `src/chatbot_1.py` (message)
-  * `src/chatbot_2.py` (multiple messages)
-  * `src/chatbot_3.py` (message history, session)
-  * `src/chatbot_4.py` (placeholder)
-  * `src/chatbot_5.py` (message history, session, placeholder)
-  * `src/chatbot_6.py` (message history, session, placeholders)
-  * `src/chatbot_7.py` (message limit)
-  * `src/chatbot_8.py` (message history, message limit)
-  * `src/chatbot_9.py` (streaming)
-
-3. The tutorial https://python.langchain.com/v0.2/docs/tutorials/agents/ is implemented in the following files:
-  * `src/agent_1.py` (tools)
-  * `src/agent_2.py` (model without tools)
-  * `src/agent_3.py` (model with tools)
-  * `src/agent_4.py` (model using tool)
-  * `src/agent_5.py` (agent)
-  * `src/agent_6.py` (agent using tool (search))
-  * `src/agent_7.py` (agent using tool (retrieve))
-  * `src/agent_8.py` (memory)
-
+see (EXAMPLES.md) for more information about the examples.
 
 Remember to activate the virtual environment before running the examples, as described in the Setup section.
 

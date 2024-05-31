@@ -1,8 +1,9 @@
 # main dependencies
 langchain
-langchain-openai
 langchain_community
 langgraph
+langchain-openai
+langchain-chroma
 
 # third party dependencies
 bs4
