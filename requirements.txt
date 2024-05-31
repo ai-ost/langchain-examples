@@ -2,6 +2,12 @@
 langchain
 langchain-openai
 langchain_community
+langgraph
+
+# third party dependencies
+bs4
+faiss-cpu
+#faiss-gpu
 
 # extra dependencies
 python-dotenv
